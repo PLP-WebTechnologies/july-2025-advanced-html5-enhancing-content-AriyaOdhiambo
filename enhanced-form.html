@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+</head>
+<body>
+    <h1> Staff Birthdays!!!</h1>
+    <img src="https://images.pexels.com/photos/796606/pexels-photo-796606.jpeg" alt="Staff Birthdays" size ="100" width="550" height="300">
+    <p>We are excited to launch a new initiative to appreciate each team member for their contribution to the growth of our company, as well as to celebrate them on this special milestone in their lives.
+    The reasons for taking this bold step, effective immediately, include:</p>
+    <ul>
+        <li>Boosting team morale</li>
+        <li>Fostering a positive work environment</li>
+        <li>Encouraging team bonding</li>
+        <li>Recognizing individual contributions</li>
+    </ul>
+    <br>
+    <audio controls>
+        <source src="Music/happy-birthday-357371.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <h2>How to Submit Your Birthday Information</h2>
+    <p>Find below a table of the format to be followed when providing your birthday information for better servitude and to ensure the program works as smooth as possible.</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Field</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>Your full name</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>Your email address</td>
+            </tr>
+            <tr>
+                <td>Birthday</td>
+                <td>Your date of birth (DD/MM)</td>
+            </tr>
+            <tr>
+                <td>Work Location</td>
+                <td>Main or branch</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Birthday Submission Form</h2>
+    <p>Use the form below to provide your relevant information. Happy birthday in advance!</p>
+    <form action="submit_birthday.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" autocomplete="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="email" required><br><br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="text" id="birthday" name="birthday" placeholder="DD/MM" required><br><br>
+
+        <label for="work_location">Work Location:</label>
+        <select id="work_location" name="work_location" required>
+            <option value="main">Main Office</option>
+            <option value="branch">Branch Office</option>
+        </select><br><br>
+
+        <label for="employer">Employer:</label>
+        <input type="text" id="employer" name="employer" value="Max Devs" readonly required><br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your birthday message here..."></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
